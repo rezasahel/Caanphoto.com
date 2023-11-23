@@ -1,0 +1,215 @@
+/* style-of-home-page-of-caanphoto-index */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(88, 131, 183);
+  color: aliceblue;
+}
+
+/* header and nav style */
+header {
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 90px;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+.home-1 {
+  width: 50%;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: aliceblue;
+  padding: 10px;
+  text-decoration: none;
+  flex-direction: row-reverse;
+}
+
+/* the main banner style */
+.banner {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.banner img {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.banner-text {
+  display: flex;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding-left: 600px;
+  padding-top: 160px;
+  top: 50%;
+}
+
+.banner-p {
+  position: absolute;
+  top: 58%;
+  padding-right: 400px;
+  padding-left: 140px;
+  font-size: 20px;
+}
+
+/* this is the style of image gallery */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading {
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.container .heading h3 {
+  font-size: 3em;
+  font-weight: bolder;
+  border-bottom: 3px solid #0b57ef;
+  padding-bottom: 10px;
+}
+
+.heading h3 span {
+  font-weight: 100;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.container .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+.container .box .dream img {
+  width: 100%;
+}
+
+/* style of the about us  */
+.about {
+  background-color: #00d5f8;
+  height: 600px;
+}
+
+.about img {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+}
+
+.about-h3 {
+  color: white;
+  text-align: left;
+  font-size: 42px;
+  padding-left: 30px;
+}
+
+.about-p {
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  text-align: justify;
+  align-items: center;
+  justify-content: left;
+  max-width: 96%;
+}
+
+/* iframe style for youtube link */
+.youtube {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 30px;
+}
+
+iframe {
+  width: 720px;
+  height: 480px;
+  border: 1px;
+}
+.youtube .youtube-textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  text-align: justify;
+  align-items: center;
+  justify-content: left;
+  max-width: 50%;
+}
+.youtube .youtube-textbox h5 {
+  display: flex;
+  padding: 20px;
+  font-size: 55px;
+}
+
+.youtube .youtube-textbox .p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 30px;
+  margin: auto;
+  text-align: justify;
+  align-items: center;
+}
+
+/* contact in footer style */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 20px 10px 0;
+  height: 100px;
+}
+
+/* this style is for responsive of page */
+@media screen and (max-width: 769px) {
+  .container .box {
+    flex-direction: column;
+  }
+  .container .box .dream {
+    width: 100%;
+  }
+}
